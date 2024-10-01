@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ListFilms from './ListFilms';
-
+import Header from '../../Header';
 
 const Films = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
   return (
-    <ListFilms/>
+    <div>
+    <Header onSearch={handleSearch} />
+    <ListFilms searchTerm={searchTerm} />
+  </div>
   )
 }
 
