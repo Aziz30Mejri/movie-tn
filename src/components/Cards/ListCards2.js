@@ -2,7 +2,6 @@ import React from "react";
 import Agent from "./Cards";
 
 const ListCards2=()=>{
-
     const Cards=[
         {id:1,nom:"Dachra", image:"../../images/dachra.jpg" ,notation:"4.1", telechargement:"4.7M"},
         {id:2,nom:"Regarder-moi", image:"../../images/regarder moi.webp",notation:"4.9", telechargement:"5.5M"},
@@ -17,6 +16,5 @@ const ListCards2=()=>{
         </div>
     )
 }
-
 
 export default ListCards2;
