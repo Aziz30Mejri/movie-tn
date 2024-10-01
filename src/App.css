@@ -23,6 +23,7 @@ container {
   padding: 15px 50px;
   margin: 0 auto;
 }
+
 .button span {
   position: relative;
   z-index: 1;
@@ -36,11 +37,13 @@ container {
   height: 470%;
   width: 140%;
   background: #52b71f;
+  z-index: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
   transform: translateX(-100%) translateY(-25%) rotate(45deg);
 }
+
 .button:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
@@ -57,4 +60,26 @@ container {
 
 .download-icon{
   color: red;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+a.text-white {
+  text-decoration: none;
+}
+
+a.text-white:hover {
+  text-decoration: underline;
 }
