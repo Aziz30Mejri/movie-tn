@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Agent from "./film";
 
-
 const ListFilms = ({ searchTerm }) => {
     const [Films] = useState([
         {id:1,nom:"Noura reve", image:"../../images/noura.jpg" ,notation:"4.1",telechargement:"4.5M"},
